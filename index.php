@@ -104,7 +104,15 @@
         <div class="title"> <hr class="hr-left"> <h1> Contact </h1> <hr class="hr-right"> </div>
         <p>You can send me an email at :</p>
 
-        
+        <?php
+        session_start();
+        if (isset($_POST['captcha'])) {
+            if ($_POST['captcha'] == $_SESSION['captcha'])
+            echo "captcha valide !";
+            else
+            echo "captcha invalide...";
+        }
+        ?>
 
         <form method="POST">
             <label for="code">compléter le captcha: </label>

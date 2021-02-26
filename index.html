@@ -15,32 +15,36 @@
 
     <!-- vérification google analytics OK - ne pas supprimer -->
     <meta name="google-site-verification" content="i4TAflQjUEosFxnSpekHq1KDYMFcagBwc24sjAeXiyE" />
-    <title>Lambda Games</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Discover the games DNA and Mask Factory"/> <!-- Pour SEO -->
+    <title>Lambda Games - DNA and Mask Factory games</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png"/> <!-- pourquoi pas faire un gif ça fonctionne -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    
 <div class="navbar">
-    <a class="home" href="#home">
-    <img class="logo-lambda" src="image/logo-navbar.png" alt="logo de lambda games">
-        Lambda Games
-    </a>
     <a href="#games">My Games</a>
     <a href="#about">About Me</a>
     <a href="#contact">Contact</a>
     <div class="langue">
-        <a href="#contact" onclick="setLanguage('fr')">FR</a>
-        <a href="#" onclick="setLanguage('en')">ENG</a>
+        <!--<a href="#" onclick="setLanguage('fr')">FR</a>
+        <a href="#" onclick="setLanguage('en')">ENG</a>-->
     </div>
 </div>
+    <a class="home" href="#home">
+    <img class="logo-lambda" src="image/lambda-logo.png" alt="lambda games logo">
+       
+    </a>
 
 <div id="about">
 
     <div class="title"> <hr class="hr-left"> <h1> About Me </h1> <hr class="hr-right"> </div>
 
-    <p>Welcome ! I am Lambda Games, French Indie Game Developer.<br/>
-        Currently I'm working on 2 games: DNA and Mask Factory.</p>
+    <h2>Welcome ! I am Lambda Games, French Indie Game Developer.<br/>
+        Currently I'm working on 2 games: DNA and Mask Factory.</h2>
     <!--<p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -52,13 +56,13 @@
 
 <div id="games">
     
-    <div class="title"> <hr class="hr-left"> <h1> Games </h1> <hr class="hr-right"> </div>
+    <div class="title"> <hr class="hr-left"> <h1> My Games </h1> <hr class="hr-right"> </div>
 
         <div class="game-dna">
-            <a href="https://store.steampowered.com/app/1091510/DNA/"><img class="image-dna" src="image/image-dna.png" alt="dna game image"></a>
-            <p>
+            <a href="https://store.steampowered.com/app/1091510/DNA/"><img class="image-dna" src="image/image-dna.png" alt="DNA game image"></a>
+            <h2>
                 DNA is a top down shooter mixing: combat, survival and exploration in an apocalyptic openworld world with pixel art and minimalist design.
-            </p>
+            </h2>
             <i>
                 Your day of rest begins strangely, shortly after you wake up you are delivered to yourself and understand what the word survive means.
                 The city you know is changing little by little and its inhabitants too.
@@ -72,11 +76,13 @@
                     
                 </p>
             </div>
-            <a class="link-dna" href="https://store.steampowered.com/app/1091510/DNA/">Wishlist it on Steam !</a>
+            <a class="link-dna-steam" href="https://store.steampowered.com/app/1091510/DNA/">Wishlist it on Steam !</a>
             
         </div>
-    
-        <!--<div class="title"> <hr class="hr-separation-left"> <hr class="hr-separation-right"> </div> -->
+
+
+        <!-- Entre mes jeux -->
+        <hr class="hr-center">
         
         <!-- <div class="title"> <hr class="hr-separation-games"> </div> -->
         <!--
@@ -90,9 +96,9 @@
 
         <div class="game-mask">
             <a href=""><img class="image-mask-factory" src="image/image-mask-factory.png" alt="mask factory game image"></a>
-            <p>
+            <h2>
                 Mask Factory is a management/Clicker Game in which you buy, optimise and sell your masks production at the better price !
-            </p>
+            </h2>
             <p>
                 <a class="link-mask-factory" href="https://play.google.com/store/apps/details?id=com.companyname.mask"><img class="downloable-mask-factory" src="image/google-play-badge-eng.png" alt="mask factory game image"></a>
             </p>
@@ -105,25 +111,29 @@
         <p>You can send me an email at :</p>
 
         <form class="captcha">
-            <input class="captcha-area" placeholder="Please input a number between 1 and 10" id="numb">
-            <button type="button" onclick="myFunction()">Submit</button>
-            <p id="demo"></p>
+            <div class="captcha-area">
+                <textarea class="captcha-2" style="resize:none" rows="2" placeholder = "Please input a number between 1 and 10" id="numb"></textarea>
+                <button class="captcha-2" type="button" id="btn-submit" onclick="myFunction()">Submit</button>
+                <p id="demo"></p>
 
-            <script>
-                function myFunction() {
-                var x, text;
-                // Get the value of the input field with id="numb"
-                x = document.getElementById("numb").value;
+                <script>
+                    function myFunction() {
+                    var x, text;
+                    // Get the value of the input field with id="numb"
+                    x = document.getElementById("numb").value;
 
-                // If x is Not a Number or less than one or greater than 10
-                if (isNaN(x) || x < 1 || x > 10) {
-                    text = "Input not valid";
-                } else {
-                    text = "lambdagamescontactme@gmail.com";
-                }
-                document.getElementById("demo").innerHTML = text;
-                }
-            </script>
+                    // If x is Not a Number or less than one or greater than 10
+                    if (isNaN(x) || x < 1 || x > 10) {
+                        text = "Input not valid";
+                    } else {
+                        document.getElementById("numb").style.visibility = "hidden";
+                        document.getElementById("btn-submit").style.visibility = "hidden";
+                        text = "lambdagamescontactme@gmail.com";
+                    }
+                    document.getElementById("demo").innerHTML = text;
+                    }
+                </script>
+            </div>
        </form>
 
         <p>Or follow & support me on :</p>

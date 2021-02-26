@@ -21,7 +21,7 @@ body {
 
 body, html{height:100%;}
 
-h1, p {
+h1, h2, p {
     color: white;
     text-align: center;
 }
@@ -48,11 +48,16 @@ p {
 }
 
 .home {
-    font-weight: bold;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 .logo-lambda {
-    width: 90px;
+    width: 10%;
 }
 
 .langue {
@@ -128,9 +133,9 @@ h1 {
     height: 100%;
 }
 
-.link-dna {
-    font-size: 26px;
-    color:rgb(147, 191, 233);
+.link-dna-steam {
+    font-size: px;
+    color:#ff7300;
     text-decoration: none;
     font-weight: bold;
 }
@@ -151,12 +156,20 @@ h1 {
     height: 3px;
 }
 
+.hr-center {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background:linear-gradient(to left, var(--fond-color), #ff7300, var(--fond-color));
+    border:0px;
+    width: 90%;
+    height: 3px;
+}
+
 .game-dna i{
     color: gray;
 }
 
 .downloable-mask-factory {
-    
     width: 30%;
 }
 
@@ -172,8 +185,6 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
 
 
 /*
@@ -206,11 +217,18 @@ h1 {
     height: 4000px;
 }
 
+form {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+   
+}
 
-
-.captcha {
-    width: 80%;
-    margin: 0 auto;
+.captcha-2 {
+    height: 50px;
 }
 
 

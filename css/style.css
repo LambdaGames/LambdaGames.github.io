@@ -32,6 +32,7 @@ p {
 
 .navbar {
     overflow: hidden;
+    z-index: 2;
     background-color: #333;
   }
 
@@ -83,14 +84,14 @@ h1 {
     height: 3px;
 }
 
-.about, .games, .contact {
+#about, #games, #contact {
     margin-top: 20px;
    /* margin-bottom: 80px;*/
 }
 
 /* GAMES */
 
-.games {
+#games {
     text-align: center;
 }
 
@@ -105,7 +106,30 @@ h1 {
     margin-bottom: 100px;
 }
 
+/* responsive text du widget */
+.widget-steam-conteiner {
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 20%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    display:block;
+}
+
+/* responsive éléments de bloc */
+.widget-steam iframe,
+.widget-steam object,
+.widget-steam embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .link-dna {
+    font-size: 26px;
     color:rgb(147, 191, 233);
     text-decoration: none;
     font-weight: bold;
@@ -171,7 +195,7 @@ h1 {
 }
 */
 
-.about, .follow
+#about, .follow
 {
     margin-right: 50px;
     margin-left: 50px;
@@ -180,6 +204,10 @@ h1 {
 
 .vide {
     height: 4000px;
+}
+
+.captcha {
+    color: white;
 }
 
 footer

@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <!-- Google Analytics -->
@@ -9,11 +8,12 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     
-    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('create', 'UA-XXXXX-Y', 'auto'); 
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    
+
+    <!-- vérification google analytics OK - ne pas supprimer -->
     <meta name="google-site-verification" content="i4TAflQjUEosFxnSpekHq1KDYMFcagBwc24sjAeXiyE" />
     <title>Lambda Games</title>
     <link rel="stylesheet" href="css/style.css">
@@ -30,12 +30,12 @@
     <a href="#about">About Me</a>
     <a href="#contact">Contact</a>
     <div class="langue">
-        <a href="#" onclick="setLanguage('fr')">FR</a>
+        <a href="#contact" onclick="setLanguage('fr')">FR</a>
         <a href="#" onclick="setLanguage('en')">ENG</a>
     </div>
 </div>
 
-<div class="about">
+<div id="about">
 
     <div class="title"> <hr class="hr-left"> <h1> About Me </h1> <hr class="hr-right"> </div>
 
@@ -50,7 +50,7 @@
 
 
 
-<div class="games">
+<div id="games">
     
     <div class="title"> <hr class="hr-left"> <h1> Games </h1> <hr class="hr-right"> </div>
 
@@ -66,9 +66,14 @@
                 Who can you trust ?
                 So many questions... but you can already say that the bullet casings will rain and that the blood will flow.
             </i>
-            <p>
-                <a class="link-dna" href="https://store.steampowered.com/app/1091510/DNA/">Wishlist it on Steam !</a>
-            </p>
+            <div class="widget-steam-conteiner">
+                <p class="widget-steam">
+                    <iframe src="https://store.steampowered.com/widget/1091510/" frameborder="0" width="646" height="190"></iframe>
+                    
+                </p>
+            </div>
+            <a class="link-dna" href="https://store.steampowered.com/app/1091510/DNA/">Wishlist it on Steam !</a>
+            
         </div>
     
         <!--<div class="title"> <hr class="hr-separation-left"> <hr class="hr-separation-right"> </div> -->
@@ -92,25 +97,30 @@
                 <a class="link-mask-factory" href="https://play.google.com/store/apps/details?id=com.companyname.mask"><img class="downloable-mask-factory" src="image/google-play-badge-eng.png" alt="mask factory game image"></a>
             </p>
         </div>
-       
 </div>
 
-
-
 <footer>
-    <div class="contact">
+    <div id="contact">
         <div class="title"> <hr class="hr-left"> <h1> Contact </h1> <hr class="hr-right"> </div>
-
         <p>You can send me an email at :</p>
 
+        
+
+        <form method="POST">
+            <label for="code">compléter le captcha: </label>
+            <img src="captcha.php" alt="CAPTCHA"/>
+            <input type="text" id="code" name="code"/>
+            <input type="submit" value="Envoyer"/>
+         </form>
+
         <p>Or follow & support me on :</p>
+        
         <div id="social-network">
             <a class="twitter" href="https://twitter.com/Lambda_Games_" target="_blank"><img class="link-twitter" src="image/twitter.png" alt="twitter logo"></a>
-            <a class="discord" href="" ><img class="link-discord" src="image/discord.png" alt="discord logo"></a>
+            <a class="discord" href="https://discord.gg/zT5X6De" ><img class="link-discord" src="image/discord.png" alt="discord logo"></a>
         </div>
     </div>
 </footer>
 
-
 </body>
-</html> 
+</html>

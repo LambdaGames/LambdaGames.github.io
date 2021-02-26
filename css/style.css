@@ -134,7 +134,8 @@ h1 {
 }
 
 .link-dna-steam {
-    font-size: px;
+    margin-top: 0px;
+    font-size: 36px;
     color:#ff7300;
     text-decoration: none;
     font-weight: bold;

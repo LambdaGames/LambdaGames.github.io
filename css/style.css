@@ -206,9 +206,13 @@ h1 {
     height: 4000px;
 }
 
+
+
 .captcha {
-   
+    width: 80%;
+    margin: 0 auto;
 }
+
 
 footer
 {

@@ -104,12 +104,27 @@
         <div class="title"> <hr class="hr-left"> <h1> Contact </h1> <hr class="hr-right"> </div>
         <p>You can send me an email at :</p>
 
-        <form method="POST">
-            <label for="code">complete the captcha: </label>
-            <img src="captcha.php" alt="CAPTCHA"/>
-            <input type="text" id="code" name="code"/>
-            <input type="submit" value="Send"/>
-         </form>
+        <form class="captcha">
+            <input class="captcha-area" placeholder="Please input a number between 1 and 10" id="numb">
+            <button type="button" onclick="myFunction()">Submit</button>
+            <p id="demo"></p>
+
+            <script>
+                function myFunction() {
+                var x, text;
+                // Get the value of the input field with id="numb"
+                x = document.getElementById("numb").value;
+
+                // If x is Not a Number or less than one or greater than 10
+                if (isNaN(x) || x < 1 || x > 10) {
+                    text = "Input not valid";
+                } else {
+                    text = "lambdagamescontactme@gmail.com";
+                }
+                document.getElementById("demo").innerHTML = text;
+                }
+            </script>
+       </form>
 
         <p>Or follow & support me on :</p>
         

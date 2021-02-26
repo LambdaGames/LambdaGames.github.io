@@ -207,11 +207,12 @@ h1 {
 }
 
 .captcha {
-    color: white;
+   
 }
 
 footer
 {
+    color: white;
     bottom:0;
     padding-top:50px;
     height:200px;

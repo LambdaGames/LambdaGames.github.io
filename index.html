@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z26CGZTKGZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z26CGZTKGZ');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- vérification google analytics OK - ne pas supprimer -->
+    <meta name="google-site-verification" content="i4TAflQjUEosFxnSpekHq1KDYMFcagBwc24sjAeXiyE" />
+    <meta charset="utf-8">
+    <meta name="description" content="Discover the games DNA and Mask Factory"/> <!-- Pour SEO -->
+    <title>Fogrim Studio - DNA and Mask Factory games</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png"/> <!-- pourquoi pas faire un gif ça fonctionne -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<div class="navbar">
+    <a href="#games">My Games</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <div class="langue">
+        <!--<a href="#" onclick="setLanguage('fr')">FR</a>
+        <a href="#" onclick="setLanguage('en')">ENG</a>-->
+    </div>
+</div>
+<body>
+
+    <a class="home" href="#home">
+        <img class="logo-fogrim-studio" src="image/fogrim-logo.png" alt="fogrim studio logo">
+    </a>
+
+<div id="about">
+    <div class="title"> <hr class="hr-left"> <h1> Fogrim Studio </h1> <hr class="hr-right"> </div>
+    <h2>Welcome !<br>
+        I am Fogrim Studio, French Indie Game Developer.<br/>
+        Currently I'm working on the game: DNA</h2>
+    <!--<p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>-->
+</div>
+
+<div id="games">
+    <div class="title"> <hr class="hr-left"> <h1> My Games </h1> <hr class="hr-right"> </div>
+        <div class="game-dna">
+            <a href="https://store.steampowered.com/app/1091510/DNA/"><img class="image-dna" src="image/image-dna.png" alt="DNA game image"></a>
+            <h2>
+                DNA is a top down shooter mixing: combat, survival and exploration in an apocalyptic openworld world with pixel art and minimalist design.
+            </h2>
+            <i>
+                Your day of rest begins strangely, shortly after you wake up you are delivered to yourself and understand what the word survive means.
+                The city you know is changing little by little and its inhabitants too.
+                What are the authorities doing about this epidemic ?
+                Who can you trust ?
+                So many questions... but you can already say that the bullet casings will rain and that the blood will flow.
+            </i>
+            <div class="widget-steam-conteiner">
+                <p class="widget-steam">
+                    <iframe id="steam" src="https://store.steampowered.com/widget/1091510/" frameborder="0"></iframe>
+                </p>
+            </div>
+            <a class="link-dna-steam" href="https://store.steampowered.com/app/1091510/DNA/">Wishlist it on Steam !</a>
+            
+        </div>
+
+        <!-- Entre mes jeux -->
+        <hr class="hr-center">
+        
+        <!-- <div class="title"> <hr class="hr-separation-games"> </div> -->
+        <!--
+        <div class="column">
+            <img class="image-dna" src="image/image-mask-factory.png" alt="image du jeu dna">
+            <p>
+            Lorem Ipsum Mask Factory is simply dummy text of the printing and typesetting industry.
+            </p>
+        </div>
+        -->
+
+        <div class="game-mask">
+            <a href=""><img class="image-mask-factory" src="image/image-mask-factory.png" alt="mask factory game image"></a>
+            <h2>
+                Mask Factory is a management/Clicker Game in which you buy, optimise and sell your masks production at the better price !
+            </h2>
+            <p>
+                <a class="link-mask-factory" href="https://play.google.com/store/apps/details?id=com.companyname.mask"><img class="downloable-mask-factory" src="image/google-play-badge-eng.png" alt="mask factory game image"></a>
+            </p>
+        </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="title"> <hr class="hr-left"> <h1> Contact </h1> <hr class="hr-right"> </div>
+    <p>You can send me an email at :</p>
+    <form class="captcha">
+        <div class="captcha-area">
+            <textarea class="captcha-2" style="resize:none" rows="2" placeholder = "Please input a number between 1 and 10" id="numb"></textarea>
+            <button class="captcha-3" type="button" id="btn-submit" onclick="myFunction()">Submit</button>
+            <p id="demo"></p>
+            <div class="mail">
+                <script>
+                    function myFunction() {
+                    var x, text;
+                    // Get the value of the input field with id="numb"
+                    x = document.getElementById("numb").value;
+
+                    // If x is Not a Number or less than one or greater than 10
+                    if (isNaN(x) || x < 1 || x > 10) {
+                        text = "Input not valid";
+                    } else {
+                        document.getElementById("numb").style.visibility = "hidden";
+                        document.getElementById("btn-submit").style.visibility = "hidden";
+                        text = "lambdagamescontactme@gmail.com";
+                    }
+                    document.getElementById("demo").innerHTML = text;
+                    }
+                </script>
+            </div>
+        </div>
+    </form>
+</div>
+<footer>
+    <p>Follow & support me on :</p>
+    <div id="social-network">
+        <a class="twitter" href="https://twitter.com/Fogrim_Studio" target="_blank"><img class="link-twitter" src="image/twitter.png" alt="twitter logo"></a>
+        <a class="discord" href="https://discord.gg/K3Scw6YCrY" ><img class="link-discord" src="image/discord.png" alt="discord logo"></a>
+    </div>
+        <!-- FONCTIONNE UNE FOIS HEBERGE SUR CLOUDFLARE SI JE VEUX INTEGRER LE WIDGET DISCORD 
+        <div id="widget discord">
+        <iframe src="https://discord.com/widget?id=195847879900921856&theme=dark"
+        width="350" height="500" allowtransparency="true" frameborder="10"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        -->
+</footer>
+
+</body>
+</html>
+
